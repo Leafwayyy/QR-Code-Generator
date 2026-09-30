@@ -1,0 +1,122 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', serif;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgb(29, 255, 119), rgb(0, 152, 74));
+
+}
+
+.container{
+
+    width: 400px;
+    height: auto;
+    min-height: 100px;
+    padding: 24px 20px;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 14px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.container h1{
+    margin: 0;
+}
+
+.input{
+
+    width: 80%;
+    height: 40px;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    background: rgb(236, 236, 236);
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.buttons{
+    gap: 50px;
+    display: flex;
+    height: 35px;
+}
+
+.generate-btn{
+    width: 120px;
+    border: none;
+    outline: none;
+    background: linear-gradient(180deg, white, rgb(39, 255, 118));
+    border-radius: 12px;
+    border: 2px solid rgb(0, 255, 123);
+    cursor: pointer;
+}
+
+.generate-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 3px 15px rgba(0, 255, 123, 0.7);
+    background: linear-gradient(180deg, white, rgb(23, 197, 87));
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.generate-btn:active{
+    transform: scale(0.9);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(180deg, rgb(12, 193, 84), rgb(0, 165, 61));
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.save-btn{
+    width: 120px;
+    border: none;
+    outline: none;
+    background: linear-gradient(180deg, white, rgb(39, 255, 118));
+    border-radius: 12px;
+    border: 2px solid rgb(0, 255, 123);
+    cursor: pointer;
+}
+
+.save-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 3px 15px rgba(0, 255, 123, 0.7);
+    background: linear-gradient(180deg, white, rgb(23, 197, 87));
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.save-btn:active{
+    transform: scale(0.9);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(180deg, rgb(12, 193, 84), rgb(0, 165, 61));
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.img-box{
+
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(203, 203, 203);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    display: none;
+}
+
+.img-box.show{
+    display: flex;
+}
+
